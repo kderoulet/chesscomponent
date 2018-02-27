@@ -1,49 +1,99 @@
 import React from 'react'
 import BoardRow from './BoardRow'
+import Header from './Header'
 
 const ChessBoard = (props) => {
     return(
-        <table>
+        <table style={{border: "1px solid black"}}>
             <tbody>
-                <BoardRow 
+                <Header/>
+                <BoardRow
                     handleMovement={props.handleMovement}
                     rankState={props.rankEight}
                     rank="8"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankSeven}
                     rank="7"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankSix}
                     rank="6"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankFive}
                     rank="5"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankFour}
                     rank="4"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankThree}
                     rank="3"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankTwo}
                     rank="2"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
                 <BoardRow 
                     handleMovement={props.handleMovement}
                     rankState={props.rankOne}
                     rank="1"
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
             </tbody>
         </table>

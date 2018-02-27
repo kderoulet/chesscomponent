@@ -6,12 +6,12 @@ const BoardSquare = (props) => {
     let color
     if (props.rank % 2) {
         if (props.index % 2) {
-            color = "white"
-        } else color = "lightblue"
+            color = props.tile1color
+        } else color = props.tile2color
     } else {
         if (props.index % 2) {
-            color = "lightblue"
-        } else color = "white"
+            color = props.tile2color
+        } else color = props.tile1color
     }
     switch (props.squareVal) {
         case 1: content = "♙";
@@ -64,14 +64,22 @@ const BoardSquare = (props) => {
         break
         default: break;
     }
-    props.squareVal >= 100 ? border="2px blue solid" : border="1px black solid"
+    props.squareVal >= 100 ? border= `2px ${props.highlight} solid` : border="1px black solid"
     return (
         <td 
             onClick={(e) => {props.handleMovement(e)}}
             datavalue={props.squareVal}
             datarank={props.rank}
             dataindexnumber={props.index}
-            style={{border: border, backgroundColor: color}}
+            style={{
+                textAlign: "center",
+                border: border,
+                backgroundColor: color,
+                width: props.tileSize,
+                height: props.tileSize,
+                fontSize: props.pieceSize,
+                color: props.pieceColor
+                }}
             >
              {content}
         </td>

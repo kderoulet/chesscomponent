@@ -12,6 +12,12 @@ const BoardRow = (props) => {
                     key={index}
                     index={index}
                     handleMovement={props.handleMovement}
+                    tileSize={props.tileSize}
+                    tile1color={props.tile1color}
+                    tile2color={props.tile2color}
+                    pieceSize={props.pieceSize}
+                    highlight={props.highlight}
+                    pieceColor={props.pieceColor}
                 />
             )}
         </tr>
